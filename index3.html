@@ -7,7 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style3.css">
+<link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="style3.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+
 
     <title>uniform</title>
 </head>
@@ -21,7 +28,7 @@
 
             <div class="logo-container">
                 <a class="logo">
-                    <img src="./assets/logo.png" alt="logo">
+                    <img src="./assets/logo-main.png" alt="logo">
                 </a>
             </div>
 
@@ -95,8 +102,8 @@
                             </div>
                         </li>
                         <li class="nav-link" style="--i: .85s">
-                            <a href="#">Schools & Colleges</a>
-                            <img class="arrow" src="./assets/down-arrow.svg" alt="">
+                            <a href="#">Schools & Colleges <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            
                             <div class="dropdown">
                                 <ul>
                                     <li class="dropdown-link">
@@ -128,7 +135,7 @@
                                         </div> -->
                                     </li>
                                     <li class="dropdown-link">
-                                        <a href="#">School Shirts</a>
+                                        <a href="#">School Shirts <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                         
                                         <div class="dropdown second">
                                             <ul>
@@ -165,11 +172,11 @@
                             </div>
                         </li>
                         <li class="nav-link" style="--i: .85s">
-                            <a href="#">Uniforms By Profession</a>
+                            <a href="#">Uniforms By Profession <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                             <div class="dropdown">
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="#">Telecom Solution</a>
+                                        <a href="#">Telecom Solution <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <!-- <div class="dropdown second">
                                             <ul>
                                                 <li class="dropdown-link">
@@ -197,7 +204,7 @@
                                         </div> -->
                                     </li>
                                     <li class="dropdown-link">
-                                        <a href="#">Network Solutions</a>
+                                        <a href="#">Network Solutions <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <div class="dropdown second">
                                             <ul>
                                                 <li class="dropdown-link">
@@ -213,7 +220,7 @@
                                         </div>
                                     </li>
                                     <li class="dropdown-link">
-                                        <a href="#">Electronic Solutions</a>
+                                        <a href="#">Electronic Solutions <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <div class="dropdown second">
                                             <ul>
                                                 <li class="dropdown-link">
@@ -317,139 +324,251 @@
         </nav> -->
     </navbar>
 
-
-    <section class="schools-section">
-        <h1 class="school-heading stroke shadow">SCHOOLS</h1>
-       
-       
-        <div class="schools-wrapper">
-            <a class="school" href="#">
-                <div class="img-wrapper">
-                    <img src="./assets/schools-logo.png" alt="image">
-                </div>
-                <span>Vidya Jain Public Schools</span>
-            </a>
-            <a class="school" href="#">
-                <div class="img-wrapper">
-                    <img src="./assets/school1.jpeg" alt="image">
-                </div>
-                <span>DPS Uniforms</span>
-            </a>
-            <a class="school" href="#">
-                <div class="img-wrapper">
-                    <img src="./assets/school2.jpg" alt="image">
-                </div>
-                <span>Vidya Jain Public Schools</span>
-            </a>
-            <a class="school" href="#">
-                <div class="img-wrapper">
-                    <img src="./assets/school3.jpg" alt="image">
-                </div>
-                <span>Vidya Jain Public Schools</span>
-            </a>
-            <a class="school" href="#">
-                <div class="img-wrapper">
-                    <img src="./assets/school2.jpg" alt="image">
-                </div>
-                <span>Vidya Jain Public Schools</span>
-            </a>
-            <a class="school" href="#">
-                <div class="img-wrapper">
-                    <img src="./assets/school3.jpg" alt="image">
-                </div>
-                <span>Vidya Jain Public Schools</span>
-            </a>
-         
-            <a class="school" href="#">
-                <div class="img-wrapper">
-                    <img src="./assets/schools-logo.png" alt="image">
-                </div>
-                <span>Vidya Jain Public Schools</span>
-            </a>
-            <a class="school" href="#">
-                <div class="img-wrapper">
-                    <img src="./assets/school1.jpeg" alt="image">
-                </div>
-                <span>DPS Uniforms</span>
-            </a>
-            <a class="school" href="#">
-                <div class="img-wrapper">
-                    <img src="./assets/school3.jpg" alt="image">
-                </div>
-                <span>Vidya Jain Public Schools</span>
-            </a>
-            <a class="school" href="#">
-                <div class="img-wrapper">
-                    <img src="./assets/school2.jpg" alt="image">
-                </div>
-                <span>Vidya Jain Public Schools</span>
-            </a>
       
+    <div class="carousel" aria-label="Image Carousel">
+        <div class="carousel__viewport" tabindex="0" id="carouselViewport" role="region" aria-roledescription="carousel" aria-label="Gallery">
+          <ul class="carousel__track" id="carouselTrack">
+            <!-- Slides -->
+            <li class="carousel__slide" id="slide-1" role="group" aria-roledescription="slide" aria-label="1 of 5">
+              <img src="/assets/banner2.jpg" alt="Abstract colorful code on screen" />
+              <div class="carousel__content">
+                <h2 class="stroke ">Welcome to Our Store</h2>
+                <p>Discover the best products at unbeatable prices.</p>
+                <a href="#shop" class="carousel__btn-link">Shop Now</a>
+              </div>
+              <!-- <div class="carousel__caption">Slide 1 — Abstract Code</div> -->
+            </li>
+            <li class="carousel__slide" id="slide-2" role="group" aria-roledescription="slide" aria-label="2 of 5">
+              <img src="/assets/bulk-orders.jpg" alt="Snow mountain with clear sky" />
+              <div class="carousel__content">
+                <h2>Bulk Orders Made Easy</h2>
+                <p>Get special discounts when you order in bulk.</p>
+                <a href="#contact" class="carousel__btn-link">Contact Us</a>
+              </div>
+              <!-- <div class="carousel__caption">Slide 2 — Mountain</div> -->
+            </li>
+            <!-- <li class="carousel__slide" id="slide-3" role="group" aria-roledescription="slide" aria-label="3 of 5">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop" alt="Forest with sunlight" />
+              <div class="carousel__caption">Slide 3 — Forest</div>
+            </li>
+            <li class="carousel__slide" id="slide-4" role="group" aria-roledescription="slide" aria-label="4 of 5">
+              <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1600&auto=format&fit=crop" alt="City skyline at night" />
+              <div class="carousel__caption">Slide 4 — City</div>
+            </li>
+            <li class="carousel__slide" id="slide-5" role="group" aria-roledescription="slide" aria-label="5 of 5">
+              <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=1600&auto=format&fit=crop" alt="Desert dunes" />
+              <div class="carousel__caption">Slide 5 — Desert</div>
+            </li> -->
+          </ul>
         </div>
+    
+        <!-- Prev / Next buttons -->
+        <div class="carousel__nav" aria-hidden="false">
+          <button class="carousel__btn carousel__btn--prev" id="btnPrev" aria-label="Previous slide">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+          </button>
+          <button class="carousel__btn carousel__btn--next" id="btnNext" aria-label="Next slide">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m10 6 1.41 1.41L7.83 11H20v2H7.83l3.58 3.59L10 18l-6-6z"/></svg>
+          </button>
+        </div>
+    
+        <!-- Pagination dots -->
+        <div class="carousel__pagination" id="carouselPagination" role="tablist" aria-label="Slide pagination"></div>
+      </div>
+      <!-- <section class="about-us">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="assets/shirts.jpg " alt="About Our Company" />
+          </div>
+          <div class="about-content">
+            <h1 class="school-heading stroke shadow" style="text-align: left;">About Us</h1>
+            <p>
+              We are a passionate team dedicated to delivering high-quality solutions 
+              that empower businesses to achieve their goals. With years of expertise 
+              and a commitment to innovation, we provide reliable services tailored to 
+              meet client needs.
+            </p>
+            <p>
+              Our mission is to create long-lasting relationships with our customers 
+              by ensuring excellence, transparency, and trust in everything we do.
+            </p>
+            <a href="#contact" class="about-btn">Learn More</a>
+          </div>
+        </div>
+      </section> -->
+    <section class="schools-section">
+        <div class="schools-container">
+        <div class="container">
+            <h1 class="school-heading stroke shadow">SCHOOLS</h1>    
+            <div class="schools-wrapper">
+                <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/schools-logo.png" alt="image">
+                    </div>
+                    <!-- <span>Vidya Jain Public Schools</span> -->
+                </a>
+                <!-- <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school1.jpeg" alt="image">
+                    </div>
+                    <span>DPS Uniforms</span>
+                </a> -->
+                <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school2.jpg" alt="image">
+                    </div>
+                    <!-- <span>Vidya Jain Public Schools</span> -->
+                </a>
+                <!-- <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school3.jpg" alt="image">
+                    </div>
+                    <span>Vidya Jain Public Schools</span>
+                </a> -->
+                <!-- <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school2.jpg" alt="image">
+                    </div>
+                    <span>Vidya Jain Public Schools</span>
+                </a> -->
+                <!-- <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school3.jpg" alt="image">
+                    </div>
+                    <span>Vidya Jain Public Schools</span>
+                </a> -->
+             
+                <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/schools-logo.png" alt="image">
+                    </div>
+                    <!-- <span>Vidya Jain Public Schools</span> -->
+                </a>
+                <!-- <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school1.jpeg" alt="image">
+                    </div>
+                    <span>DPS Uniforms</span>
+                </a> -->
+                <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school3.jpg" alt="image">
+                    </div>
+                    <!-- <span>Vidya Jain Public Schools</span> -->
+                </a>
+                <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school3.jpg" alt="image">
+                    </div>
+                    <!-- <span>Vidya Jain Public Schools</span> -->
+                </a>
+                <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school2.jpg" alt="image">
+                    </div>
+                    <!-- <span>Vidya Jain Public Schools</span> -->
+                </a>
+                <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school3.jpg" alt="image">
+                    </div>
+                    <!-- <span>Vidya Jain Public Schools</span> -->
+                </a>
+                <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school2.jpg" alt="image">
+                    </div>
+                    <!-- <span>Vidya Jain Public Schools</span> -->
+                </a>
+                <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school3.jpg" alt="image">
+                    </div>
+                    <!-- <span>Vidya Jain Public Schools</span> -->
+                </a>
+                <a class="school" href="#">
+                    <div class="img-wrapper">
+                        <img src="./assets/school2.jpg" alt="image">
+                    </div>
+                    <!-- <span>Vidya Jain Public Schools</span> -->
+                </a>
+          
+            </div>
+        </div>
+    </div>
     </section>
-    <section class="uniforms-section">
+    <section class="uniforms-section container">
         <h1 class="school-heading stroke shadow">Uniforms</h1>
+        <p>Choose from a wide range of uniforms that cater to various needs and styles.</p>
        
-        <div class="uniforms-wrapper">
-            <div class="uniform" >
-                
-                <img src="./assets/shirts.jpg" alt="image">
+        <div class="uniforms-wrapper reveal-right">
+            <div class="uniform" style="background-image: url(./assets/shirts.jpg);">
+                <div class="overlay"></div>
+                <span class="offer-tag">₹750 ONWARDS</span>
                 <h2>Shirts</h2>
-              
+                <p>Strong and tough, <br>
+                    day after day</p>
                 <a href="#" class="uniform-button">Shop Now</a>
             </div>
-            <div class="uniform" >
-                
-                <img src="./assets/tunic.jpg" alt="image">
+            <div class="uniform" style="background-image: url(./assets/tunic.jpg);">
+                <div class="overlay"></div>
+                <span class="offer-tag">₹750 ONWARDS</span>
                 <h2>Tunic</h2>
-              
+                <p>Strong and tough, <br>
+                    day after day</p>
                 <a href="#" class="uniform-button">Shop Now</a>
             </div>
-            <div class="uniform" >
-                
-                <img src="./assets/suits.jpeg" alt="image">
+            <div class="uniform" style="background-image: url(./assets/suits.jpeg);">
+                <div class="overlay"></div>
+                <span class="offer-tag">₹750 ONWARDS</span>
                 <h2>Suits</h2>
-              
+                <p>Strong and tough, <br>
+                    day after day</p>
                 <a href="#" class="uniform-button">Shop Now</a>
             </div>
-            <div class="uniform" >
-                
-                <img src="./assets/blazers.jpg" alt="image">
+            <div class="uniform" style="background-image: url(./assets/blazers.jpg);">
+                <div class="overlay"></div>
+                <span class="offer-tag">₹750 ONWARDS</span>
                 <h2>Blazers</h2>
-              
+                <p>Strong and tough, <br>
+                    day after day</p>
                 <a href="#" class="uniform-button">Shop Now</a>
             </div>
-            <div class="uniform" >
-                
-                <img src="./assets/suits.jpeg" alt="image">
+            <div class="uniform" style="background-image: url(./assets/suits.jpeg);">
+                <div class="overlay"></div>
+                <span class="offer-tag">₹750 ONWARDS</span>
                 <h2>Suits</h2>
-              
+                <p>Strong and tough, <br>
+                    day after day</p>
                 <a href="#" class="uniform-button">Shop Now</a>
             </div>
-            <div class="uniform" >
-                
-                <img src="./assets/blazers.jpg" alt="image">
+            <div class="uniform" style="background-image: url(./assets/blazers.jpg);">
+                <div class="overlay"></div>
+                <span class="offer-tag">₹750 ONWARDS</span>
                 <h2>Blazers</h2>
-              
+                <p>Strong and tough, <br>
+                    day after day</p>
                 <a href="#" class="uniform-button">Shop Now</a>
             </div>
-            <div class="uniform" >
-                
-                <img src="./assets/shirts.jpg" alt="image">
+            <div class="uniform" style="background-image: url(./assets/shirts.jpg);">
+                <div class="overlay"></div>
+                <span class="offer-tag">₹750 ONWARDS</span>
                 <h2>Shirts</h2>
-              
+                <p>Strong and tough, <br>
+                    day after day</p>
                 <a href="#" class="uniform-button">Shop Now</a>
             </div>
-            <div class="uniform" >
-                
-                <img src="./assets/tunic.jpg" alt="image">
+            <div class="uniform" style="background-image: url(./assets/tunic.jpg);">
+                <div class="overlay"></div>
+                <span class="offer-tag">₹750 ONWARDS</span>
                 <h2>Tunic</h2>
-              
+                <p>Strong and tough, <br>
+                    day after day</p>
                 <a href="#" class="uniform-button">Shop Now</a>
             </div>
     
            
-            <!-- <div class="uniform" >
+            <!-- <div class="uniform" style="background-image: url(./assets/shirts.jpg);">
                 <h2>Shirts</h2>
                 <a href="#" class="uniform-button">Shop Now</a>
             </div>
@@ -472,45 +591,82 @@
         </div>
        
     </section>
-    <section class="brands-section" >
+    <section class="why-choose-us">
+        <div class="content">
+          <h1 class=" school-heading stroke shadow">Why Choose Us</h1>
+          <div class="cards">
+            <div class="card">
+                <div class="svg-container">
+                    <img src="./assets/service.svg" alt="services">
+                </div>
+              <h3>Quality Service</h3>
+              <p>We ensure top-notch services with attention to detail and a focus on customer satisfaction.</p>
+            </div>
+            <div class="card">
+                <div class="svg-container">
+                    <img src="./assets/team.svg" alt="services">
+                </div>
+              <h3>Experienced Team</h3>
+              <p>Our skilled professionals bring years of experience to deliver exceptional results.</p>
+            </div>
+            <div class="card">
+                <div class="svg-container">
+                    <img src="./assets/discount.svg" alt="services">
+                </div>
+              <h3>Affordable Pricing</h3>
+              <p>Get the best value for your money with our competitive and transparent pricing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+   
+    <section class="testimonials-section" >
         <h1 class="school-heading stroke shadow">What Our Customers Say</h1>
        
-        <div class="brands-container">
-            <div class="brand-carousel">
-              <div class="brand-slide">
-                <img src="./assets/profile.jpg" alt="brands">
+        <div class="testimonials-container">
+            <div class="testimonial-carousel">
+              <div class="testimonial-slide">
+                <img src="./assets/profile.jpg" alt="testimonials">
                 <div class="content">
                     <span>John Doe</span>
+                    <i class="fa fa-quote-left"></i> 
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.
                     </p>
+                    <i class="fa fa-quote-right"></i>
                 </div>
             </div>
-              <div class="brand-slide">
-                <img src="./assets/profile.jpg" alt="brands">
+              <div class="testimonial-slide">
+                <img src="./assets/profile.jpg" alt="testimonials">
                 <div class="content">
                     <span>John Doe</span>
+                    <i class="fa fa-quote-left"></i>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.
                     </p>
+                    <i class="fa fa-quote-right"></i>
                 </div>
             </div>
-              <div class="brand-slide">
-                <img src="./assets/profile.jpg" alt="brands">
+              <div class="testimonial-slide">
+                <img src="./assets/profile.jpg" alt="testimonials">
                 <div class="content">
                     <span>John Doe</span>
+                    <i class="fa fa-quote-left"></i>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.
                     </p>
+                    <i class="fa fa-quote-right"></i>
                 </div>
             </div>
-              <div class="brand-slide">
-                <img src="./assets/profile.jpg" alt="brands">
+              <div class="testimonial-slide">
+                <img src="./assets/profile.jpg" alt="testimonials">
                 <div class="content">
                     <span>John Doe</span>
+                    <i class="fa fa-quote-left"></i>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora.
                     </p>
+                    <i class="fa fa-quote-right"></i>
                 </div>
             </div>
               
@@ -575,8 +731,8 @@
         </div>
     </footer>
     <script>
-        //   brands carousel
-//   const carousel = document.querySelector('.brand-carousel');
+        //   testimonials carousel
+//   const carousel = document.querySelector('.testimonial-carousel');
 
 // // Clone the slides for infinite effect
 // const slides = carousel.children;
@@ -587,7 +743,7 @@
 
 
 // document.addEventListener('DOMContentLoaded', () => {
-//     const carousel = document.querySelector('.brand-carousel');
+//     const carousel = document.querySelector('.testimonial-carousel');
 //     const slides = Array.from(carousel.children);
 //     const slideCount = slides.length;
 
@@ -607,7 +763,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const carousel = document.querySelector('.brand-carousel');
+    const carousel = document.querySelector('.testimonial-carousel');
     const slides = Array.from(carousel.children);
     const slideCount = slides.length;
 
@@ -641,7 +797,77 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Slide Width:', slideWidth);
     console.log('Carousel Total Width:', carouselWidth);
 });
+(function () {
+      const viewport = document.getElementById('carouselViewport');
+      const track = document.getElementById('carouselTrack');
+      const slides = Array.from(track.children);
+      const btnPrev = document.getElementById('btnPrev');
+      const btnNext = document.getElementById('btnNext');
+      const pagination = document.getElementById('carouselPagination');
 
+      let currentIndex = 0;
+
+      // Build dots
+      slides.forEach((slide, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'carousel__dot';
+        dot.type = 'button';
+        dot.role = 'tab';
+        dot.setAttribute('aria-controls', slide.id);
+        dot.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+        dot.addEventListener('click', () => goTo(i));
+        pagination.appendChild(dot);
+      });
+
+      const dots = Array.from(pagination.children);
+
+      function goTo(index) {
+        index = Math.max(0, Math.min(index, slides.length - 1));
+        const target = slides[index];
+        // Use offsetLeft to handle variable widths responsively
+        viewport.scrollTo({ left: target.offsetLeft - track.offsetLeft, behavior: 'smooth' });
+      }
+
+      function updateUI(index) {
+        currentIndex = index;
+        dots.forEach((d, i) => d.setAttribute('aria-selected', i === currentIndex ? 'true' : 'false'));
+        btnPrev.disabled = currentIndex === 0;
+        btnNext.disabled = currentIndex === slides.length - 1;
+      }
+
+      // Prev / Next
+      btnPrev.addEventListener('click', () => goTo(currentIndex - 1));
+      btnNext.addEventListener('click', () => goTo(currentIndex + 1));
+
+      // Keyboard: left/right on viewport
+      viewport.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(currentIndex - 1); }
+        if (e.key === 'ArrowRight') { e.preventDefault(); goTo(currentIndex + 1); }
+      });
+
+      // Update active dot based on what’s centered using IntersectionObserver
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && entry.intersectionRatio > 0.6) {
+            const idx = slides.indexOf(entry.target);
+            if (idx !== -1) updateUI(idx);
+          }
+        });
+      }, { root: viewport, threshold: [0.6] });
+
+      slides.forEach(slide => io.observe(slide));
+
+      // Initialize
+      updateUI(0);
+
+      // Optional: keep current slide in view on resize (e.g., orientation change)
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => goTo(currentIndex), 100);
+      });
+    })();
+  </script>
 
 // footer
 const footerLinks = document.querySelectorAll('.footer-links');
@@ -654,5 +880,6 @@ footerLinks.forEach(link => {
     });
 });
     </script>
+    <script src="index2.js"></script>
 </body>
 </html>
