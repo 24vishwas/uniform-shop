@@ -368,7 +368,10 @@
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
           </button>
           <button class="carousel__btn carousel__btn--next" id="btnNext" aria-label="Next slide">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m10 6 1.41 1.41L7.83 11H20v2H7.83l3.58 3.59L10 18l-6-6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+              </svg>
+              
           </button>
         </div>
     
@@ -399,9 +402,9 @@
     <section class="schools-section">
         <div class="schools-container">
         <div class="container">
-            <h1 class="school-heading stroke shadow">SCHOOLS</h1>    
+            <h1 class="school-heading stroke shadow reveal">SCHOOLS</h1>    
             <div class="schools-wrapper">
-                <a class="school" href="#">
+                <a class="school reveal-right" href="#">
                     <div class="img-wrapper">
                         <img src="./assets/schools-logo.png" alt="image">
                     </div>
@@ -413,7 +416,7 @@
                     </div>
                     <span>DPS Uniforms</span>
                 </a> -->
-                <a class="school" href="#">
+                <a class="school reveal-right" href="#">
                     <div class="img-wrapper">
                         <img src="./assets/school2.jpg" alt="image">
                     </div>
@@ -438,7 +441,7 @@
                     <span>Vidya Jain Public Schools</span>
                 </a> -->
              
-                <a class="school" href="#">
+                <a class="school reveal-right" href="#">
                     <div class="img-wrapper">
                         <img src="./assets/schools-logo.png" alt="image">
                     </div>
@@ -450,43 +453,43 @@
                     </div>
                     <span>DPS Uniforms</span>
                 </a> -->
-                <a class="school" href="#">
+                <a class="school reveal-left" href="#">
                     <div class="img-wrapper">
                         <img src="./assets/school3.jpg" alt="image">
                     </div>
                     <!-- <span>Vidya Jain Public Schools</span> -->
                 </a>
-                <a class="school" href="#">
+                <a class="school reveal-left" href="#">
                     <div class="img-wrapper">
                         <img src="./assets/school3.jpg" alt="image">
                     </div>
                     <!-- <span>Vidya Jain Public Schools</span> -->
                 </a>
-                <a class="school" href="#">
+                <a class="school reveal-left" href="#">
                     <div class="img-wrapper">
                         <img src="./assets/school2.jpg" alt="image">
                     </div>
                     <!-- <span>Vidya Jain Public Schools</span> -->
                 </a>
-                <a class="school" href="#">
+                <a class="school reveal-left" href="#">
                     <div class="img-wrapper">
                         <img src="./assets/school3.jpg" alt="image">
                     </div>
                     <!-- <span>Vidya Jain Public Schools</span> -->
                 </a>
-                <a class="school" href="#">
+                <a class="school reveal-right" href="#">
                     <div class="img-wrapper">
                         <img src="./assets/school2.jpg" alt="image">
                     </div>
                     <!-- <span>Vidya Jain Public Schools</span> -->
                 </a>
-                <a class="school" href="#">
+                <a class="school reveal-right" href="#">
                     <div class="img-wrapper">
                         <img src="./assets/school3.jpg" alt="image">
                     </div>
                     <!-- <span>Vidya Jain Public Schools</span> -->
                 </a>
-                <a class="school" href="#">
+                <a class="school reveal-right" href="#">
                     <div class="img-wrapper">
                         <img src="./assets/school2.jpg" alt="image">
                     </div>
@@ -498,7 +501,7 @@
     </div>
     </section>
     <section class="uniforms-section container">
-        <h1 class="school-heading stroke shadow">Uniforms</h1>
+        <h1 class="school-heading stroke shadow reveal">Uniforms</h1>
         <p>Choose from a wide range of uniforms that cater to various needs and styles.</p>
        
         <div class="uniforms-wrapper reveal-right">
@@ -593,23 +596,23 @@
     </section>
     <section class="why-choose-us">
         <div class="content">
-          <h1 class=" school-heading stroke shadow">Why Choose Us</h1>
+          <h1 class=" school-heading stroke shadow reveal">Why Choose Us</h1>
           <div class="cards">
-            <div class="card">
+            <div class="card reveal-right">
                 <div class="svg-container">
                     <img src="./assets/service.svg" alt="services">
                 </div>
               <h3>Quality Service</h3>
               <p>We ensure top-notch services with attention to detail and a focus on customer satisfaction.</p>
             </div>
-            <div class="card">
+            <div class="card reveal-bottom">
                 <div class="svg-container">
                     <img src="./assets/team.svg" alt="services">
                 </div>
               <h3>Experienced Team</h3>
               <p>Our skilled professionals bring years of experience to deliver exceptional results.</p>
             </div>
-            <div class="card">
+            <div class="card reveal-left">
                 <div class="svg-container">
                     <img src="./assets/discount.svg" alt="services">
                 </div>
@@ -869,17 +872,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })();
   </script>
 
-// footer
-const footerLinks = document.querySelectorAll('.footer-links');
-
-// Add click event listener to each footer link
-footerLinks.forEach(link => {
-    link.addEventListener('click', function() {
-        // Toggle the 'visible' class on the clicked element
-        this.classList.toggle('visible');
-    });
-});
-    </script>
+<!-- // footer -->
+    <!-- </script> -->
     <script src="index2.js"></script>
 </body>
 </html>

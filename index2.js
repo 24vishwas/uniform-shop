@@ -16,4 +16,12 @@ function revealOnScroll() {
   
   window.addEventListener('scroll', revealOnScroll);
   window.addEventListener('load', revealOnScroll); // trigger on load
-  
+  const footerLinks = document.querySelectorAll('.footer-links');
+
+// Add click event listener to each footer link
+footerLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        // Toggle the 'visible' class on the clicked element
+        this.classList.toggle('visible');
+    }); 
+});
